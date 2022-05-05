@@ -1,0 +1,14 @@
+module coinsComparer #(parameter N = 8) (input [N-1:0] total, drinkPrice, enableIn,
+													output vuelto, enableOut);
+always_comb
+	begin
+	if (enableIn and total >= drinkPrice)
+		begin
+		vuelto = total - drinkPrice;
+		enableOut = 1'b1;
+		end
+	else
+		begin
+		enableOut = 1'b0;
+		end
+endmodule

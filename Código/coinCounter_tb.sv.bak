@@ -1,0 +1,8 @@
+module coinCounter_tb ();
+
+logic clk, rst, m100, m500;
+logic [7:0] total;
+
+coinCounter contadorMonedas (clk, rst, m100, m500, total);
+
+endmodule

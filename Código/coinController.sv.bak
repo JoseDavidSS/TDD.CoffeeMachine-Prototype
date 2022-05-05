@@ -1,0 +1,9 @@
+module coinController (input clk, rst, m100, m500, drink1, drink2, drink3, drink4,
+								output logic enable,
+								output logic [7:0] vuelto);
+
+								
+
+endmodule
+								
+					

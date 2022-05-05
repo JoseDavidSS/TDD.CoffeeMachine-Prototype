@@ -1,0 +1,10 @@
+module coinCounter #(parameter N=8) (input clk, rst, m100, m500, 
+											output logic [N-1:0] total);
+											
+always_ff @ (posedge clk or posedge rst)
+	if (rst) total = 8'h00;
+	else
+		if (m100) total = total + 1'b1;
+		if (m500) total = total + 3'b101;
+		
+endmodule
